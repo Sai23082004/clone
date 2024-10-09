@@ -8,6 +8,12 @@ import sai from '../public/images/sai.jpg'
 import abba from '../public/images/abba.jpg'
 import bavi from '../public/images/bavi.jpg'
 import gs from '../public/images/gs.jpg'
+import tony from '../public/images/tony.jpg'
+import moma from '../public/images/moma.jpg'
+import bavi1 from '../public/images/bavi1.jpg'
+import sai1 from '../public/images/sai1.jpg'
+
+
 
 
 
@@ -302,12 +308,53 @@ export const Home = () => {
 
             </div>
 
+             {/* WELCOME SECTION 3 */}
+             <div className="background-my-section">
+                <div
+                    className="pt-5"
+                    style={{
+                        backgroundImage: `url(${tony})`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'right',
+                        // width: '100vw',  // full width of the viewport
+                        // height: '85vh', // full height of the viewport
+                    }}
+                >
+                    <div className="p-lg-5 pt-0 container-lg">
+                        {/* <h1 style={{ fontSize: '50px', color: '#203764' }} className="fw-bold pb-5 text-center">Department of CSE</h1> */}
+                        <div className="row px-5 ">
+
+                            <div className="col-md-6 d-flex align-items-cente justify-content-center flex-column gap-3">
+                                <div>
+                                    <p className="fw-bold " style={{ textTransform: 'uppercase', letterSpacing: 2 }}></p>
+                                    <h1 style={{ fontSize: '50px', color: '#203764' }} className="fw-bold">Hod Of Data Science </h1>
+                                </div>
+                                <p className="" style={{ fontSize: '20px' }}>Mr. G. Sreenivasa Reddy is our esteemed Associate Professor and Head of Data Science. With his vast experience and expertise in teaching, he continually inspires and empowers students on their academic journey, helping them reach their full potential in the field of data science...</p>
+
+
+                            </div>
+
+                            <div className="col-md-6 ps-5 d-flex align-items-center">
+                                <div className="">
+                                    <img className="img-fluid " style={{ borderRadius: '20px', minHeight: '300px', maxHeight: "500px", }} src={(gs)} alt="" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
             {/* Peoples section  2 */}
             <div className="">
                 <div
                     className="pt-5"
                     style={{
-                        backgroundImage: `url(${saikiran2})`,
+                        backgroundImage: `url(${moma})`,
                         backgroundRepeat: 'no-repeat',
                         backgroundSize: 'cover',
                         // backgroundPosition: 'right',
@@ -315,12 +362,12 @@ export const Home = () => {
                         // height: '85vh', // full height of the viewport
                     }}
                 >
-                    <h1 style={{ fontSize: '35px', color: '#203764' }} className="fw-bold pb-lg-3 text-center">Developers Community </h1>
+                    <h1 style={{ fontSize: '35px', color: 'black' }} className="fw-bold pb-lg-3 text-center">Developers Community </h1>
                     <div className="p-lg-5 pb-0 container-lg">
                         <div className="row p-4">
                             <div className="col-md-4 mb-5">
-                                <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#6CF264', padding: '10px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
-                                    <img className="img-fluid" style={{ borderRadius: '20px', width: "400px", position: 'relative' }} src={(sai)} alt="" />
+                                <div style={{ borderWidth: '2px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: 'black', padding: '3px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
+                                    <img className="img-fluid" style={{ borderRadius: '20px', width: "400px", position: 'relative',height: "350px" }} src={(sai)} alt="" />
                                     {/* <img className="img-fluid" style={{ borderRadius: '20px', height: "17rem", width: "40rem", position: 'relative', top: '-70px' }} src={saikiran2} alt="" /> */}
                                     <div className="pt-4" style={{ position: 'relative', }}>
                                         <h5 className="text-center fw-bold">G . Sai Kiran </h5>
@@ -330,8 +377,8 @@ export const Home = () => {
                             </div>
 
                             <div className="col-md-4 mb-5">
-                                <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#6CF264', padding: '10px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
-                                    <img className="img-fluid" style={{ borderRadius: '20px', width: "700px", position: 'relative' }} src={(bavi)} alt="" />
+                                <div style={{ borderWidth: '2px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: 'black', padding: '3px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
+                                    <img className="img-fluid" style={{ borderRadius: '20px', width: "700px", position: 'relative' ,height: "350px"}} src={(bavi)} alt="" />
                                     {/* <img className="img-fluid" style={{ borderRadius: '20px', height: "17rem", width: "40rem", position: 'relative', top: '-70px' }} src={saikiran2} alt="" /> */}
                                     <div className="pt-4" style={{ position: 'relative', }}>
                                         <h5 className="text-center fw-bold">K. Bhavana </h5>
@@ -341,8 +388,8 @@ export const Home = () => {
                             </div>
 
                             <div className="col-md-4 mb-5">
-                                <div style={{ borderWidth: '1px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: '#6CF264', padding: '10px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
-                                    <img className="img-fluid" style={{ borderRadius: '20px', width: "700px", position: 'relative' }} src={(abba)} alt="" />
+                                <div style={{ borderWidth: '2px', borderRadius: '20px', borderStyle: 'solid', paddingBottom: '20px', borderColor: 'black', padding: '3px' }} className="position-relative flex-column d-flex justify-content-center align-items-center">
+                                    <img className="img-fluid" style={{ borderRadius: '20px', width: "700px", position: 'relative',height: "350px" }} src={(abba)} alt="" />
                                     {/* <img className="img-fluid" style={{ borderRadius: '20px', height: "17rem", width: "40rem", position: 'relative', top: '-70px' }} src={saikiran2} alt="" /> */}
                                     <div className="pt-4" style={{ position: 'relative', }}>
                                         <h5 className="text-center fw-bold">C . Abbas </h5>
