@@ -282,7 +282,7 @@ export const Home = () => {
                     }}
                 >
                     <div className="p-lg-5 pt-0 container-lg">
-                        <h1 style={{ fontSize: '50px', color: '#203764' }} className="fw-bold pb-5 text-center">Department of CSE</h1>
+                        {/* <h1 style={{ fontSize: '50px', color: '#203764' }} className="fw-bold pb-5 text-center">Department of CSE</h1> */}
                         <div className="row px-5 ">
 
                             <div className="col-md-6 d-flex align-items-cente justify-content-center flex-column gap-3">
