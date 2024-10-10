@@ -1,6 +1,7 @@
 import { useState } from 'preact/hooks'
 import DropdownMenu from './components/DropDown'
 import './cssPages/navbar.css'
+import { useNavigate } from 'react-router-dom'
 
 
 function Navbar() {
@@ -16,6 +17,8 @@ function Navbar() {
     const [iqac,setIqac]=useState(false)
     const [infrasture,setInfrature]= useState(false)
     const [media,setmedia]=useState(false)
+
+    const navigate = useNavigate()
 
     return (<>
 
@@ -34,7 +37,7 @@ function Navbar() {
             {
                 menu &&
                 <div className="d-flex p-3 w-100 flex-column text-primary">
-                    <li><span className='span fs-6'>Home</span></li>
+                    <li onClick={()=>navigate('/')} ><span className='span fs-6'>Home</span></li>
                     <li>
                         <div className="d-flex fs-6 flex-column">
 
@@ -338,7 +341,7 @@ function Navbar() {
             <div style={{ backgroundColor: '#6755A3', zIndex: 999 }} className=''>
 
                 <div className="container d-flex gap-3 flex-nowrap text-nowrap py-2 align-items-center justify-content-center text-light">
-                    <li><span className='span fs-6'>Home</span></li>
+                    <li onClick={()=>{navigate("/")}}><span className='span fs-6'>Home</span></li>
                     <li>
                         <div className="dropdown fs-6">
                             <div className="d-inline-flex align-items-center">
@@ -525,6 +528,7 @@ function Navbar() {
                     <li>
                         <a href="https://cbit.edu.in/contact/">Contact</a>
                     </li>
+                    <li onClick={()=>{navigate("/Download")}}><span className='span fs-6'>Student Corner</span></li>
 
 
                     <span className=''>
