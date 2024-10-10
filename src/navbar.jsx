@@ -281,9 +281,9 @@ function Navbar() {
 
 
                 <li>
-                <div className="d-flex fs-6 flex-column">
-                <div className="d-flex align-items-center py-2 justify-content-between w-100">
-                <li onClick={()=>navigate('/download')} ><span className='span fs-6'>Student Corner</span></li>
+                    <div className="d-flex fs-6 flex-column">
+                        <div className="d-flex align-items-center py-2 justify-content-between w-100">
+                            <li onClick={()=>navigate('/download')} ><span className='span fs-6'>Student Corner</span></li>
 
                             <i onClick={() => setstudent(!student)} style={{ fontSize: "" }} className="fa-solid border rounded-circle border-dark p-2 text-dark fa-chevron-down ms-3"></i>
 
@@ -293,9 +293,9 @@ function Navbar() {
                             student &&
                         <div style={{ zIndex: 999, background: "#6755A3" }} className="fs-6 gap-3 d-flex flex-column p-2">
 
-                            <a className="dropdown-item" href="/download">Preious Year Question Papers </a>
-                            <a className="dropdown-item" href="/download/">Question Banks </a>
-                            <a className="dropdown-item" href="/download">Study Materials </a>
+                            <a className="dropdown-item" href="/">Preious Year Question Papers </a>
+                            <a className="dropdown-item" href="/">Question Banks </a>
+                            <a className="dropdown-item" href="/">Study Materials </a>
                             
 
                         </div>
@@ -303,17 +303,6 @@ function Navbar() {
                         }
                     </div>
                 </li>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -568,11 +557,7 @@ function Navbar() {
 
 
 
-
-                    
-
-                    
-
+    
                     <li>
                         <a href="https://cbit.edu.in/contact/">Contact</a>
                     </li>
