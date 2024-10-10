@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import Navbar from "../navbar"
-import IYEARISEMESTERQUESTIONPAPERS from "../../public/pdf/1-1 R23 (1).pdf"
+// import IYEARISEMESTERQUESTIONPAPERS from "../../public/pdf/1-1 R23 (1).pdf"
 // import './cssPages/home.css'
-const semisterPaperDownloadsPdfs = [[[IYEARISEMESTERQUESTIONPAPERS], ["I YEAR II SEM REGULAR ALL BRANCH QUESTION PAPERS"]], [[]], [[]]]
+const semisterPaperDownloadsPdfs = [[["IYEARISEMESTERQUESTIONPAPERS"], ["I YEAR II SEM REGULAR ALL BRANCH QUESTION PAPERS"]], [[]], [[]]]
 
 const DownloadPage = () => {
     const semisters = ["PREVIOUS YEAR QUESTION PAPERS - Regulation : R23", "Previous Year Question Papers - Regulation : R20", "PREVIOUS YEAR QUESTION PAPERS - Regulation : R23"]
