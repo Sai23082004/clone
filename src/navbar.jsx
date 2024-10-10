@@ -17,6 +17,7 @@ function Navbar() {
     const [iqac,setIqac]=useState(false)
     const [infrasture,setInfrature]= useState(false)
     const [media,setmedia]=useState(false)
+    const [student,setstudent]=useState(false)
 
     const navigate = useNavigate()
 
@@ -276,6 +277,46 @@ function Navbar() {
                     </div>
                 </li>
 
+
+
+
+                <li>
+                <div className="d-flex fs-6 flex-column">
+                <div className="d-flex align-items-center py-2 justify-content-between w-100">
+                <li onClick={()=>navigate('/download')} ><span className='span fs-6'>Student Corner</span></li>
+
+                            <i onClick={() => setstudent(!student)} style={{ fontSize: "" }} className="fa-solid border rounded-circle border-dark p-2 text-dark fa-chevron-down ms-3"></i>
+
+                        </div>
+                        {
+
+                            student &&
+                        <div style={{ zIndex: 999, background: "#6755A3" }} className="fs-6 gap-3 d-flex flex-column p-2">
+
+                            <a className="dropdown-item" href="/download">Preious Year Question Papers </a>
+                            <a className="dropdown-item" href="/download/">Question Banks </a>
+                            <a className="dropdown-item" href="/download">Study Materials </a>
+                            
+
+                        </div>
+
+                        }
+                    </div>
+                </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <li>
                         <a href="https://cbit.edu.in/contact/">Contact</a>
                     </li>
@@ -524,6 +565,13 @@ function Navbar() {
                             </div>
                         </div>
                     </li>
+
+
+
+
+                    
+
+                    
 
                     <li>
                         <a href="https://cbit.edu.in/contact/">Contact</a>
